@@ -1,25 +1,21 @@
 <div class="card">
   <div class="img">
-    <img
-      src="https://www.freetogame.com/g/540/thumbnail.jpg"
-      alt="Overwatch 2"
-      width="265"
-      height="150"
-      loading="lazy"
-    />
+    <img [src]="imgUrl" [alt]="title" width="265" height="150" />
   </div>
   <div class="card-body">
     <div class="card-header">
-      <h4>Overwatch 2</h4>
+      <h4>{{ title }}</h4>
       <span>FREE</span>
     </div>
     <div class="card-description">
-      <p>
-        A hero-focused first-person team shooter from Blizzard Entertainment.
-      </p>
+      <div class="description">
+        <p>
+          {{ description }}
+        </p>
+      </div>
       <div class="card-links">
-        <a href="">Oficial Page</a>
-        <span>Shooter</span>
+        <a [href]="link">Oficial Page</a>
+        <span>{{ category }}</span>
       </div>
     </div>
   </div>

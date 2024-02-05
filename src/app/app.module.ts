@@ -9,6 +9,7 @@ import { AllGamesComponent } from './pages/all-games/all-games.component';
 import { PcGamesComponent } from './pages/pc-games/pc-games.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { CardComponent } from './components/card/card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { CardComponent } from './components/card/card.component';
     PcGamesComponent,
     CardComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })

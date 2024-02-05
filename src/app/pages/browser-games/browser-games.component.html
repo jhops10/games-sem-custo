@@ -4,8 +4,15 @@
   </div>
   <div class="cards-container">
     <!-- Card -->
-    <app-card></app-card>
-
+    <app-card
+      *ngFor="let game of gamesData"
+      title="{{ game.title }}"
+      description="{{ game.short_description }}"
+      imgUrl="{{ game.thumbnail }}"
+      link="{{ game.game_url }}"
+      category="{{ game.genre }}"
+    ></app-card>
     <!-- Card -->
   </div>
 </div>
+f
