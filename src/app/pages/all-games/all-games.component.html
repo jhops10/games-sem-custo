@@ -1,1 +1,17 @@
-<p>all-games works!</p>
+<div class="container">
+  <div class="header">
+    <h2>Todos os Jogos</h2>
+  </div>
+  <div class="cards-container">
+    <!-- Card -->
+    <app-card
+      *ngFor="let game of gamesData"
+      title="{{ game.title }}"
+      description="{{ game.short_description }}"
+      imgUrl="{{ game.thumbnail }}"
+      link="{{ game.game_url }}"
+      category="{{ game.genre }}"
+    ></app-card>
+    <!-- Card -->
+  </div>
+</div>
