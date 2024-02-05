@@ -1,0 +1,19 @@
+.container {
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+  height: 100vh;
+
+  .header {
+    width: 100%;
+    padding: 1.5rem;
+    border-bottom: 1px solid #fb4460;
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+}

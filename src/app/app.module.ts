@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { BrowserGamesComponent } from './pages/browser-games/browser-games.component';
 import { AllGamesComponent } from './pages/all-games/all-games.component';
 import { PcGamesComponent } from './pages/pc-games/pc-games.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,11 @@ import { PcGamesComponent } from './pages/pc-games/pc-games.component';
     HomeComponent,
     BrowserGamesComponent,
     AllGamesComponent,
-    PcGamesComponent
+    PcGamesComponent,
+    CardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
